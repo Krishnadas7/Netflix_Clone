@@ -1,3 +1,28 @@
 /* .avatar{
     right: 0;
 } */
+.search-icon{
+    color: white;
+    width: 32px;
+    height: 66px;
+}
+.nofication-icon{
+     color: white;
+    width: 26px;
+    height: 66px;
+}
+.arrow-icon{
+    color: white;
+    width: 21px;
+    height: 58px;
+}
+.header-button{
+    color: white;
+    margin-right: 13px;
+}
+.header-button-color{
+    margin-left: -462px;
+    margin-top: 23px;
+    font-size: medium;
+    
+}

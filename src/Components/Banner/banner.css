@@ -1,0 +1,72 @@
+.banner{
+    background-image: url('https://wallpaperaccess.com/full/2703652.png') ;
+   background-size: cover;   
+   height: 450px;
+}
+.details{
+    background-color:#4E4E4F;
+    width: 114px;
+    height: 44px;
+    border-radius: 8px;
+    margin-left: 4px;
+    font-size: large;
+}
+button.details:hover{
+    background-color: rgba(255, 255, 255, 0.356);
+    cursor: pointer;
+}
+button.details {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+}
+button.details:active {
+    border-color: white; /* Border color when the button is clicked */
+}
+.title{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.description{
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    max-width: 483px;
+}
+.buttons{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.detailss{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* width: 114px;
+    height: 47px;
+    border-radius: 8px;
+    margin-left: 4px;
+     font-size: 37px; */
+
+
+    /* width: 47px;
+    height: 41px; */
+    /* padding: 0px;
+    padding-top: 4px;
+    padding-left: 10px; */
+}
+
+.play-icon{
+    height: 2rem;
+    width: 3rem;
+}
+.play-icon-button{
+    height: 44px;
+    padding: 8px;
+    width: 109px;
+    margin-left: -93px;
+    border-radius: 7px;
+}
+button.play-icon-button:hover{
+    background-color: rgb(230, 227, 227);
+    cursor: pointer;
+}
