@@ -7,7 +7,8 @@ function Navbar(){
     
     return(
         <>
-        <div className=" flex justify-between content-between nav-bar bg-black h-16">
+        <div className='header-nav'>
+        <div className=" nav-bar h-16">
             
             <img className=" w-13 mx-10 my-5 h-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="" />
                 <ul className='flex header-button-color '>
@@ -26,6 +27,7 @@ function Navbar(){
            <IoMdArrowDropdown className='arrow-icon' />
           </div>
          
+        </div>
         </div>
         </>
     )

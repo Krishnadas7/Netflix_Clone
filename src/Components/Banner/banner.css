@@ -1,15 +1,19 @@
 .banner{
-    background-image: url('https://wallpaperaccess.com/full/2703652.png') ;
-   background-size: cover;   
-   height: 450px;
+    background-size: cover;   
+    height: 110vh;
 }
 .details{
-    background-color:#4E4E4F;
-    width: 114px;
-    height: 44px;
-    border-radius: 8px;
-    margin-left: 4px;
-    font-size: large;
+    display: flex;
+    /* font-size: xx-large; */
+    /* background-color: rgba(150, 132, 132, 0.356); */
+    height: 38px;
+    border-radius: 2px;
+    margin-left: 3px;
+    justify-content: center;
+    align-items: center;
+    width: 131px;
+    background-color: rgba(109, 109, 110, 0.7);
+    font-weight: 700;
 }
 button.details:hover{
     background-color: rgba(255, 255, 255, 0.356);
@@ -24,19 +28,22 @@ button.details:active {
 }
 .title{
     position: absolute;
-    top: 40%;
-    left: 10%;
+    top: 44%;
+    left: 3%;
+    font-size: revert-layer;
+    font-weight: 500;
 }
 .description{
-    position: absolute;
-    top: 55%;
-    left: 3%;
-    max-width: 483px;
+    max-width: 736px;
+    padding-left: 42px;
+    padding-top: 314px;
 }
 .buttons{
-    position: absolute;
-    top: 70%;
-    left: 10%;
+    /* position: absolute; */
+    /* top: 70%;
+    left: 10%; */
+   padding-top: 40px;
+   padding-left: 133px;
 }
 .detailss{
     background-color: rgb(255, 255, 255);
@@ -60,13 +67,34 @@ button.details:active {
     width: 3rem;
 }
 .play-icon-button{
-    height: 44px;
-    padding: 8px;
+    height: 39px;
+    padding: 4px;
     width: 109px;
     margin-left: -93px;
-    border-radius: 7px;
+    border-radius: 3px;
 }
 button.play-icon-button:hover{
     background-color: rgb(230, 227, 227);
     cursor: pointer;
+}
+.fade-bottom{
+    background-color: transparent;
+    background-image: linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 15%,hsla(0,0%,8%,.35) 29%,hsla(0,0%,8%,.58) 44%,#141414 68%,#141414);
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    bottom: -1px;
+    height: 7rem;
+    opacity: 1;
+    top: auto;
+    width: 100%;
+
+
+    
+    top: 92%;
+    position: absolute;
+}
+
+.more-icon{
+font-size: xx-large;
 }

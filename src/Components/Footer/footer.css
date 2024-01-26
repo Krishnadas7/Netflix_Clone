@@ -1,0 +1,51 @@
+.footer{
+    background-color: rgb(20,20,20);
+    color: grey;
+}
+.footer-items{
+    padding-top: 21px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    line-height: 2.2;
+    padding-bottom: 63px;
+}
+.fb-icon{
+    height: 25px;
+    margin-left: 1px;
+    width: 31px;
+    color: white;
+}
+.insta-icon{
+    height: 25px;
+    margin-left: 21px;
+    width: 31px;
+    color: white;
+}
+.twitter-icon{
+    height: 25px;
+    margin-left: 21px;
+    width: 31px;
+    color: white;
+}
+.youtube-icon{
+    height: 25px;
+    margin-left: 21px;
+    width: 31px;
+    color: white;
+}
+.icons-div{
+    margin-left: 180px;
+    margin-top: 0px;
+    padding-bottom: -14px;
+    padding-top: 100px;
+}
+.footer-button{
+    border: white;
+    border-color: white;
+    padding: 0px;
+    outline: groove;
+    height: 25px;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
