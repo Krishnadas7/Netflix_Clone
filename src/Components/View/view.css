@@ -1,0 +1,35 @@
+.frame-of-div{
+    width: 768px;
+    height: 359px;
+    margin-left: -20px;
+    margin-top: -20px;
+
+   
+}
+.view-movie-details{
+    margin-top: 35px;
+    display: flex;
+}
+.first-part{
+    width: 50%;
+}
+.second-part{
+    width: 50%;
+}
+.details-button{
+    outline: white;
+    border: double;
+    padding: -20px;
+    width: 33px;
+    height: 27px;
+}
+.details-description{
+    font-size: small;
+    margin-top: 33px;
+
+}
+.langdetails{
+    font-size: small;
+    margin-top: 33px;
+
+}

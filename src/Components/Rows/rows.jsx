@@ -3,13 +3,21 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import axios from '../../axios';
 import { API_KEY, imageUrl } from '../../Constants/constant';
-import View from '../View/modal';
+import View from '../View/view';
 
 function Row(props) {
   const [movies, setMovies] = useState([]);
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [id,setMovieId]=useState('')
+  const [movieData,setMovieData]=useState('')
 
-  const setModalIsOpenToTrue = () => {
+  const setModalIsOpenToTrue = (id,movieData) => {
+    axios.get(`movie/${id}/videos?api_key=${API_KEY}`)
+      .then((response) => {
+        console.log("video",response.data);
+        setMovieId(response.data.results[0].key)
+        setMovieData(movieData)
+      })
     setModalIsOpen(true);
   };
 
@@ -26,7 +34,7 @@ function Row(props) {
 
   const customStyles = {
     content: {
-      width: '642px',
+      width: '768px',
       top: '50%',
       left: '50%',
       right: 'auto',
@@ -34,9 +42,9 @@ function Row(props) {
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
       backgroundColor: 'black',
-      border: '1px solid #fff',
       borderRadius: '10px', 
       padding: '20px',
+      border:'none'
     },
     overlay: {
       backgroundColor: 'rgba(0, 0, 0, 0.5)', 
@@ -62,7 +70,7 @@ function Row(props) {
           <div className='poster-images flex'>
             {movies.map((obj,index) => (
               <img key={index}
-                onClick={setModalIsOpenToTrue}
+                onClick={()=>setModalIsOpenToTrue(obj.id,obj)}
                 className='row-image'
                 src={`${movies ? imageUrl + obj.backdrop_path : ''}`}
                 alt=''
@@ -72,7 +80,7 @@ function Row(props) {
               <button onClick={setModalIsOpenToFalse} style={customStyles.closeButton}>
                 x
               </button>
-              <View />
+              <View data={movieData} id={id} />
             </Modal>
           </div>
         </div>
