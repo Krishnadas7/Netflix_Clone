@@ -5,6 +5,12 @@ import { API_KEY ,imageUrl} from '../../Constants/constant'
 
 function Row(props){
     const [movies,setMovies]=useState([])
+
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const setModalIsOpenToTrue =()=>{
+        setModalIsOpen(true)
+    }
     useEffect(()=>{
       axios.get(props.url).then((response)=>{
         console.log(response.data);
@@ -19,7 +25,7 @@ function Row(props){
             <div className='poster-images flex'>
                 {
                    movies.map((obj)=>(
-                     <img className='row-image' src={`${movies ? imageUrl+obj.backdrop_path:''}`} alt="" />
+                     <img onClick={setModalIsOpenToTrue} className='row-image' src={`${movies ? imageUrl+obj.backdrop_path:''}`} alt="" />
                     ))
                 }
           </div>

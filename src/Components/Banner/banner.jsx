@@ -13,6 +13,7 @@ function Banner(){
         }
         generateRandomNumber(); 
           axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
+            console.log(response.data.results[0]);
             setMovies(response.data.results[newRandomNumber])
           })
           
